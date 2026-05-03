@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Build, by Studio B — We ship on our own stack.</title>
+  <title>Build, by Studio b. — We ship on our own stack.</title>
   <meta name="description" content="Bolt, AcuOps, and Amplify run real operations. We build in public.">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Build, by Studio B">
+  <meta property="og:site_name" content="Build, by Studio b.">
   <meta property="og:title" content="We ship on our own stack.">
   <meta property="og:description" content="Bolt, AcuOps, and Amplify run real operations. We build in public.">
   <meta property="og:url" content="https://build.b.studio">
@@ -18,6 +18,7 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
       --yolk: #F7D344;
+      --process-blue: #3A7CA5;
       --ink: #0D0D0D;
       --vermillion: #D94425;
       --paper: #F4F1EB;
@@ -33,36 +34,37 @@
 
     /* Nav */
     .nav { padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(244,241,235,0.08); }
-    .nav-mark { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(244,241,235,0.45); text-decoration: none; }
-    .nav-link { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(244,241,235,0.35); text-decoration: none; transition: color 0.12s; }
-    .nav-link:hover { color: var(--yolk); }
+    .nav-mark { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(244,241,235,0.45); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; }
+    .nav-link { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(244,241,235,0.35); text-decoration: none; transition: color 0.12s; display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; }
+    .nav-link:hover { color: var(--process-blue); }
 
     /* Hero */
     .hero { padding: 5rem 4rem 4rem; max-width: 960px; border-bottom: 1px solid rgba(244,241,235,0.1); }
     .firm-label { font-family: 'JetBrains Mono', monospace; font-size: 0.52rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(244,241,235,0.3); margin-bottom: 2rem; }
-    h1 { font-family: 'Fraunces', serif; font-weight: 900; font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.93; letter-spacing: -0.03em; color: var(--yolk); margin-bottom: 1.75rem; }
+    h1 { font-family: 'Fraunces', serif; font-weight: 900; font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.93; letter-spacing: -0.03em; color: var(--process-blue); margin-bottom: 1.75rem; }
     h1 em { font-style: italic; color: var(--vermillion); }
-    .hero-body { font-size: 1.05rem; line-height: 1.65; color: rgba(244,241,235,0.65); max-width: 560px; margin-bottom: 2.5rem; }
+    .hero-body { font-size: 1.1rem; line-height: 1.65; color: rgba(244,241,235,0.75); max-width: 560px; margin-bottom: 2.5rem; }
 
     /* Subscribe */
     .subscribe-section { padding: 4rem; border-bottom: 1px solid rgba(244,241,235,0.08); }
     .subscribe-inner { max-width: 640px; }
-    .subscribe-kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(247,211,68,0.45); margin-bottom: 1.5rem; }
-    .subscribe-headline { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.2; color: var(--yolk); margin-bottom: 1rem; }
-    .subscribe-body { font-size: 0.92rem; line-height: 1.65; color: rgba(244,241,235,0.6); margin-bottom: 2rem; }
+    .subscribe-kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(58,124,165,0.45); margin-bottom: 1.5rem; }
+    .subscribe-headline { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.2; color: var(--process-blue); margin-bottom: 1rem; }
+    .subscribe-body { font-size: 0.92rem; line-height: 1.65; color: rgba(244,241,235,0.6); margin-bottom: 1.5rem; }
+    .subscribe-comments { margin-bottom: 1.75rem; }
+    .subscribe-comment { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--process-blue, #3A7CA5); line-height: 1.9; color: rgba(58,124,165,0.4); }
 
     /* Products */
     .products-section { border-bottom: 1px solid rgba(244,241,235,0.08); }
     .products-head { padding: 3rem 4rem 2rem; border-bottom: 1px solid rgba(244,241,235,0.08); }
     .products-kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(244,241,235,0.3); margin-bottom: 1rem; }
     .products-head h2 { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--paper); }
-    .product-card { padding: 3rem 4rem; border-bottom: 1px solid rgba(244,241,235,0.08); display: grid; grid-template-columns: 200px 1fr; gap: 3rem; align-items: start; }
+    .product-card { padding: 2rem 4rem; border-bottom: 1px solid rgba(244,241,235,0.08); display: grid; grid-template-columns: 200px 1fr; gap: 3rem; align-items: center; }
     .product-card:last-child { border-bottom: none; }
     .product-label { font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--vermillion); margin-bottom: 0.5rem; }
-    .product-name { font-family: 'Fraunces', serif; font-weight: 900; font-size: 1.6rem; line-height: 1; letter-spacing: -0.02em; color: var(--yolk); }
-    .product-body { font-size: 0.92rem; line-height: 1.7; color: rgba(244,241,235,0.65); margin-bottom: 1.25rem; }
-    .product-link { font-family: 'JetBrains Mono', monospace; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--yolk); text-decoration: none; border-bottom: 1px solid rgba(247,211,68,0.3); padding-bottom: 1px; transition: border-color 0.12s; }
-    .product-link:hover { border-color: var(--yolk); }
+    .product-name { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.25rem; line-height: 1; letter-spacing: -0.02em; color: var(--process-blue); text-decoration: none; transition: color 0.12s; }
+    a.product-name:hover { color: var(--paper); }
+    .product-body { font-size: 0.92rem; line-height: 1.7; color: rgba(244,241,235,0.65); margin-bottom: 0; }
 
     /* Build notes */
     .notes-section { padding: 4rem; border-bottom: 1px solid rgba(244,241,235,0.08); }
@@ -78,14 +80,15 @@
     .footer { padding: 2rem 4rem; border-top: 1px solid rgba(244,241,235,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
     .footer-mark { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(244,241,235,0.25); }
     .footer-links { display: flex; gap: 2rem; }
-    .footer-link { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,241,235,0.25); text-decoration: none; transition: color 0.12s; }
-    .footer-link:hover { color: var(--yolk); }
+    .footer-link { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,241,235,0.25); text-decoration: none; transition: color 0.12s; padding: 0.5rem 0; display: inline-block; }
+    .footer-link:hover { color: var(--process-blue); }
 
     @media (max-width: 768px) {
       .hero, .subscribe-section, .products-head, .notes-section, .footer { padding: 3rem 1.5rem; }
       .product-card { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 1rem; }
       .nav { padding: 1rem 1.5rem; }
     }
+    .brand-b { text-transform: none; }
   </style>
 </head>
 <body>
@@ -93,22 +96,27 @@
 <div class="stripe" aria-hidden="true"></div>
 
 <nav class="nav">
-  <a href="https://b.studio" class="nav-mark">b.</a>
+  <a href="https://b.studio" class="nav-mark"><span class="brand-b">b.</span></a>
   <a href="https://markdown.b.studio/subscribe" class="nav-link">Subscribe to Markdown →</a>
 </nav>
 
 <section class="hero">
-  <p class="firm-label">Build, by Studio B</p>
-  <h1>We ship on <em>our own</em> stack.</h1>
-  <p class="hero-body">Bolt, AcuOps, and Amplify run real operations at Studio B's portfolio companies. We build in public — because you can't sell software you wouldn't run yourself.</p>
+  <p class="firm-label">Build, by Studio <span class="brand-b">b.</span></p>
+  <h1>We don't sell software we wouldn't <em>run ourselves.</em></h1>
+  <p class="hero-body">Bolt, AcuOps, and Amplify run real operations at Studio <span class="brand-b">b.</span>'s portfolio companies. We build in public — because you can't sell software you wouldn't run yourself.</p>
 </section>
 
 <!-- SUBSCRIBE -->
 <section class="subscribe-section" id="subscribe">
   <div class="subscribe-inner">
-    <div class="subscribe-kicker">Markdown, by Studio B</div>
-    <h2 class="subscribe-headline">How we build AI-native software on real operations.</h2>
-    <p class="subscribe-body">Behind-the-scenes of Bolt, AcuOps, and everything else Studio B ships. What we built, what broke, what we learned. Written for technical founders and operators who are also building.</p>
+    <div class="subscribe-kicker">Markdown, by Studio <span class="brand-b">b.</span></div>
+    <h2 class="subscribe-headline">For founders who've outgrown the typical tech newsletter.</h2>
+    <p class="subscribe-body">We build Bolt, AcuOps, and Amplify on live operations — because you can't sell software you wouldn't run yourself. We write about the architectural decisions we regret, the vendors we replaced, and the things that held. If you want the sanitized version, it's already on every newsletter you've subscribed to.</p>
+    <div class="subscribe-comments">
+      <div class="subscribe-comment">// twice monthly</div>
+      <div class="subscribe-comment">// technical founders + operators</div>
+      <div class="subscribe-comment">// one click out, always</div>
+    </div>
     <div class="beehiiv-embed-container">
       <iframe src="https://embeds.beehiiv.com/MARKDOWN_PUB_ID?slim=true" data-test-id="beehiiv-embed"
         height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important;
@@ -129,55 +137,52 @@
   <div class="product-card">
     <div>
       <div class="product-label">01</div>
-      <div class="product-name">Bolt</div>
+      <a href="https://bolt.b.studio" class="product-name">Bolt →</a>
     </div>
     <div>
-      <p class="product-body">Continuous goods WMS built for distributors who sell by the foot, yard, or kilogram. Container tracking, partial-cut inventory, DRP, ATP — the things that generic WMS counts wrong. Running at Heritage Fabrics in production.</p>
-      <a href="https://bolt.b.studio" class="product-link">bolt.b.studio →</a>
+      <p class="product-body">The things generic WMS counts wrong. Container tracking, partial-cut inventory, DRP, ATP — built for distributors who sell by the foot, yard, or kilogram. Running at Heritage Fabrics in production.</p>
     </div>
   </div>
 
   <div class="product-card">
     <div>
       <div class="product-label">02</div>
-      <div class="product-name">AcuOps</div>
+      <a href="https://acuops.com" class="product-name">AcuOps →</a>
     </div>
     <div>
-      <p class="product-body">Acumatica DevOps platform. Twelve health probes, post-publish test suite, CI/CD pipeline through the Customization API. VAR-facing. The infrastructure layer Acumatica doesn't ship.</p>
-      <a href="https://acuops.com" class="product-link">acuops.com →</a>
+      <p class="product-body">The infrastructure layer Acumatica doesn't ship. Twelve health probes, post-publish test suite, CI/CD pipeline through the Customization API. VAR-facing.</p>
     </div>
   </div>
 
   <div class="product-card">
     <div>
       <div class="product-label">03</div>
-      <div class="product-name">Amplify</div>
+      <a href="https://amplify.b.studio" class="product-name">Amplify →</a>
     </div>
     <div>
-      <p class="product-body">Outbound intelligence engine. Detects signals from X.com, LinkedIn, and GitHub activity — drafts newsletter issues and social content in a calibrated voice, routes through Slack for approval before anything publishes. We built this to run our own marketing. Now we sell it.</p>
-      <a href="https://amplify.b.studio" class="product-link">amplify.b.studio →</a>
+      <p class="product-body">We built this to run our own marketing. Now we sell it. Detects signals from X.com, LinkedIn, and GitHub — drafts newsletter issues and social content in a calibrated voice, routes through Slack for approval before anything publishes.</p>
     </div>
   </div>
 </section>
 
 <!-- BUILD NOTES (placeholder — updated as Markdown issues publish) -->
 <section class="notes-section" id="notes">
-  <div class="notes-kicker">Recent build notes — from Markdown, by Studio B</div>
+  <div class="notes-kicker">Recent build notes — from Markdown, by Studio <span class="brand-b">b.</span></div>
   <div class="note-item">
     <div class="note-date">Subscribe to get build notes as they publish</div>
     <div class="note-title">Behind the build: what ships and what breaks</div>
-    <div class="note-excerpt">War stories from running Bolt, AcuOps, and Amplify on real operations. Subscribe to Markdown, by Studio B to get each issue.</div>
+    <div class="note-excerpt">War stories from running Bolt, AcuOps, and Amplify on real operations. Subscribe to Markdown, by Studio <span class="brand-b">b.</span> to get each issue.</div>
     <a href="https://markdown.b.studio/subscribe" class="note-link">Subscribe →</a>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="footer-mark">Build, by Studio B · b.studio</div>
+  <div class="footer-mark">Build, by Studio <span class="brand-b">b.</span> · b.studio</div>
   <nav class="footer-links">
     <a href="https://bolt.b.studio" class="footer-link">Bolt</a>
     <a href="https://acuops.com" class="footer-link">AcuOps</a>
     <a href="https://amplify.b.studio" class="footer-link">Amplify</a>
-    <a href="https://b.studio" class="footer-link">Studio B</a>
+    <a href="https://b.studio" class="footer-link">Studio b.</a>
   </nav>
 </footer>
 
